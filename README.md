@@ -6,14 +6,15 @@ This NFT preview component is one of the easy challenges, intended for newbie co
 
 The only difference between the solution and given references is the media query part. No single media query was actually necessary, but I added few, as I had the knowledge already.
 
-## Built with
+## Checkout the live demo
+[NFT preview card component](https://peac-h.github.io/2_NFT-preview-card-component/)
 
-- HTML
-- CSS
-- & LOVE
+## Built with
+- html
+- css
+- & love
 
 ## Author
-
-- Github - https://github.com/Peac-h
-- LinkedIn - https://www.linkedin.com/in/tamta-lomidze-b336b9266/
-- Twitter - https://twitter.com/p6eac_h
+- [Github](https://github.com/Peac-h)
+- [LinkedIn](https://www.linkedin.com/in/tamta-lomidze-b336b9266/)
+- [Twitter](https://twitter.com/p6eac_h)
