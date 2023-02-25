@@ -1,0 +1,195 @@
+:root {
+  --color-main-bg: hsl(217, 54%, 11%);
+  --color-card-bg: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-soft-blue: hsl(215, 52%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-family-main: 'Outfit', sans-serif;
+  --font-family-secondary: 'Grape Nuts', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 23.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-main-bg);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+main {
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  padding: 2.4rem;
+  min-height: 59.6rem;
+  max-width: 35rem;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+
+.card__img-box {
+  position: relative;
+  max-height: 30.2rem;
+}
+
+.card__img {
+  max-width: 100%;
+  border-radius: 0.8rem;
+}
+
+.card__img--overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--color-cyan);
+  border-radius: 0.8rem;
+  transition: opacity 0.3s ease-in;
+}
+
+.card__img--hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.card__img-box:hover {
+  cursor: pointer;
+}
+
+.card__img-box:hover .card__img--overlay {
+  opacity: 0.5;
+}
+
+.card__img-box:hover .card__img--hover {
+  opacity: 1;
+}
+
+.card__heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: var(--color-white);
+  transition: color 0.3s ease-in;
+}
+
+.card__heading:hover,
+.author__text span:hover {
+  color: var(--color-cyan);
+  cursor: pointer;
+}
+
+.card__text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  color: var(--color-soft-blue);
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.card__price-box {
+  font-weight: 600;
+  color: var(--color-cyan);
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.65rem;
+}
+
+.card__price-days {
+  color: var(--color-soft-blue);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.author__img {
+  max-width: 3.3rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.author__text {
+  color: var(--color-soft-blue);
+}
+
+.author__text span {
+  color: var(--color-white);
+  transition: color 0.3s ease-in;
+}
+
+footer {
+  min-height: 3vh;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: end;
+  margin-right: 1rem;
+  color: var(--color-soft-blue);
+}
+
+.attribution a {
+  color: var(--color-cyan);
+}
+
+.attribution a:last-child {
+  font-family: var(--font-family-secondary);
+  font-size: 1.6rem;
+}
+
+.mb-md {
+  margin-bottom: 1.6rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
