@@ -9,6 +9,8 @@ The only difference between the solution and given references is the media query
 ## Checkout the live demo
 [NFT preview card component](https://peac-h.github.io/2_NFT-preview-card-component/)
 
+![NFT preview card component](https://raw.githubusercontent.com/Peac-h/2_NFT-preview-card-component/main/screenshot.png)
+
 ## Built with
 - html
 - css
